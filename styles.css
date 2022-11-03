@@ -1,0 +1,166 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+/* css for large dispaly */
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 36px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+button {
+    font-weight: 400;
+    font-size: 14px;
+    height: 48px;
+    width: 344px;
+    border-radius: 24px;
+    margin: 32px;
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.flex-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame {
+    height: 416px;
+    width: 416px;
+    border-radius: 16px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.star-img{
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+    margin: 32px;
+    background-color: hsl(216, 12%, 25%);
+}
+
+.number-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 32px;
+}
+
+.number {
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+    background-color: hsl(216, 12%, 25%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+}
+
+/* "thank you" layout */
+
+.thank-you-layout {
+    height: 416px;
+    width: 416px;
+    border-radius: 16px;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+}
+.thank-you-title {
+    font-size: 30px;
+}
+.you-selected-line {
+    background-color: hsl(216, 12%, 25%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* css for small display */
+
+@media (max-width: 416px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+    .frame {
+        height: 362px;
+        width: 328px;
+        }
+    
+    .star-img {
+        height: 45px;
+        width: 45px;
+        margin: 26px;
+    }
+    
+    .number-row > div {
+        height: 45px;
+        width: 45px;
+    } 
+    
+    button {
+        height: 45px;
+        width: 280px;
+        margin: 26px;
+    }
+
+    .thank-you-layout {
+        height: 362px;
+        width: 328px;
+    }
+}
+
+/* alter states and button */
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.number:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.zindex {
+    z-index: 1;
+}
+
+/* Attribution */
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
