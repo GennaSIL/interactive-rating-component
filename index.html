@@ -17,7 +17,7 @@
 <body>
     <div class="frame center-position zindex">
       <div class="star-img flex-set">
-        <img src="images/icon-star.svg" alt="icon-star">
+        <img src="images/icon-star.svg" alt="" aria-hidden="true">
       </div>
   
       <h1>How did we do?</h1>
@@ -26,21 +26,41 @@
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
       </p>
+
+      <form id="ratingForm" onsubmit="getScore(); return false">
+        <div class="number-row">
+          <label class="container">
+            <input value="1" type="radio" name="score">
+            <span class="checkmark flex-set">1</span>
+          </label>
   
-      <div class="number-row">
-        <div class="number flex-set">1</div>
-        <div class="number flex-set">2</div>
-        <div class="number flex-set">3</div>
-        <div class="number flex-set">4</div>
-        <div class="number flex-set">5</div>
-      </div>
-    
-      <button class="flex-set">Submit</button>
+          <label class="container">
+            <input value="2" type="radio" name="score">
+            <span class="checkmark flex-set">2</span>
+          </label>
+  
+          <label class="container">
+            <input value="3" type="radio" name="score">
+            <span class="checkmark flex-set">3</span>
+          </label>
+  
+          <label class="container">
+            <input value="4" type="radio" name="score">
+            <span class="checkmark flex-set">4</span>
+          </label>
+  
+          <label class="container">
+            <input value="5" type="radio" name="score">
+            <span class="checkmark flex-set">5</span>
+          </label>
+        </div>
+        <button type="submit" name="scoreSubmit" class="flex-set">Submit</button>
+      </form>
 
     </div>
 
     <div class="thank-you-layout flex-set center-position">
-      <img src="images/illustration-thank-you.svg" alt="Thank-you-image">
+      <img src="images/illustration-thank-you.svg" alt="" aria-hidden="true">
       <p class="you-selected-line"></p>
       <h1 class="thank-you-title">Thank You!</h1>
       <p>
