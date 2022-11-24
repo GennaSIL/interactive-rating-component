@@ -30,6 +30,7 @@ button {
     border: 0;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
 .flex-set {
@@ -63,13 +64,30 @@ button {
 .number-row {
     display: flex;
     justify-content: space-around;
+    height: 52px;
     margin: 32px;
 }
 
-.number {
+.container {
+    width: 52px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
     height: 52px;
     width: 52px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: hsl(216, 12%, 25%);
     color: hsl(217, 12%, 63%);
     font-weight: 700;
@@ -116,7 +134,7 @@ button {
         margin: 26px;
     }
     
-    .number-row > div {
+    .checkmark {
         height: 45px;
         width: 45px;
     } 
@@ -140,12 +158,12 @@ button:hover {
     color: hsl(25, 97%, 53%);
 }
 
-.number:hover {
+.container:hover input ~ .checkmark {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.selected {
+.container input:checked ~ .checkmark {
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
@@ -160,6 +178,7 @@ button:hover {
     font-size: 11px;
     position: absolute;
     bottom: 10px;
+    color: white;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
