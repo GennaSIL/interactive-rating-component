@@ -7,6 +7,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+- [Updates](#updates)
+  - [24/11/22](#24/11/22)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -28,6 +30,14 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/screenshot.png?raw=true)
+
+## Updates
+
+### 24/11/22
+
+After getting feedback on the way I programmed this app before I understood I did everything wrong.
+Now is clear to me that any data submition fron the user should be done via an HTML form.
+Had to rewrite the entire rating buttons part, including scc and new js.
 
 ## My process
 
